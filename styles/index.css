@@ -1,0 +1,7 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* add grid layout to the home page -to have more responsive layout */
