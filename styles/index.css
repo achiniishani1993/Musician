@@ -5,3 +5,39 @@
 }
 
 /* add grid layout to the home page -to have more responsive layout */
+
+
+/* Make the container two columns */
+body {
+  min-height: 100vh;
+  background-color: #000000;
+  display: flex; 
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  width: 100%;
+  max-width: 1200px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
