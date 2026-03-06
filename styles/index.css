@@ -66,13 +66,61 @@ nav a {
   list-style: none;
   gap: 30px;
 }
-
+.navLinks a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+.navLinks a:hover {
+    border-bottom: 2px solid red;
+}
 .menu-icon {
   display: block;
   font-size: 26px;
   cursor: pointer;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #201f1f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 20px 8px 10px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover:not(.closebtn) {
+  background-color: #555;
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+   color: red;
+}
 /* TEXT */
 .text {
   margin-top: 40px;
@@ -133,8 +181,7 @@ nav a {
   .navLinks {
     display: flex; /* Show nav links */
   }
-
-  .menu-icon {
+  .menu-icon , .sidenav{
     display: none;
   }
 
